@@ -42,7 +42,6 @@ const NewsSlider = () => {
             description: "G’s発スタートアップ「moovy」の今とこれから",
             imageUrl: "https://gsacademy.jp/uploads/moovy_photo1-1280x855.jpg"
         },
-        // 他のニュースも同様に追加します...
     ];
 
     const settings = {
