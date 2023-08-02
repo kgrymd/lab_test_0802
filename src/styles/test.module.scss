@@ -1,5 +1,33 @@
-.test {
-    color: blue;
-    font-weight: bold;
-    background: pink;
+.title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: skyblue;
+    text-align: center;
 }
+
+.subtitle {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.button {
+    width: 300px;
+    height: 64px;
+    text-align: center;
+
+    margin: auto;
+    // color: blue;
+    margin-top: 64px;
+    background-color: skyblue;
+}
+
+// .newsItem {
+//     h3 {
+//         color: skyblue;
+//     }
+
+//     p {
+//         font-size: 16px;
+//     }
+// }
