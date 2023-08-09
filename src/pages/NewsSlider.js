@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import style from "../styles/test.module.scss"
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -6,6 +6,8 @@ import "slick-carousel/slick/slick-theme.css";
 
 const NewsSlider = () => {
     const [characters, setCharacters] = useState([]);
+    const audioRef = useRef(null); // BGM用のaudio要素への参照
+
 
     useEffect(() => {
         fetch('https://akabab.github.io/starwars-api/api/all.json')
@@ -28,8 +30,21 @@ const NewsSlider = () => {
         window.location.href = "https://starwars.disney.co.jp/"; // スターウォーズの公式サイトに遷移
     }
 
+    // BGMを再生する関数
+    const playBGM = () => {
+        if (audioRef.current) {
+            audioRef.current.play();
+        }
+    }
+
     return (
         <>
+            <audio ref={audioRef} src="/audio/ending2.mp3" loop />
+
+            <div className={style.button}>
+                <button onClick={playBGM}>PLAY BGM</button>
+            </div>
+
             <h3 className={style.title}>Star Wars Characters</h3>
             <p className={style.subtitle}>A long time ago in a galaxy far, far away....</p>
             <Slider {...settings}>
