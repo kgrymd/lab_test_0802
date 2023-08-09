@@ -28,7 +28,8 @@
 
 
 body {
-  background: url('https://www.starwars.com/static/img/star-wars-logo.jpg') no-repeat center center fixed;
+  background-color: black;
+  /* background: url('https://www.starwars.com/static/img/star-wars-logo.jpg') no-repeat center center fixed; */
   background-size: cover;
   color: rgb(var(--foreground-rgb));
 }
