@@ -24,6 +24,10 @@ const NewsSlider = () => {
         autoplaySpeed: 2000,
     };
 
+    const handleButtonClick = () => {
+        window.location.href = "https://starwars.disney.co.jp/"; // スターウォーズの公式サイトに遷移
+    }
+
     return (
         <>
             <h3 className={style.title}>Star Wars Characters</h3>
@@ -48,7 +52,7 @@ const NewsSlider = () => {
                 ))}
             </Slider>
             <div className={style.button}>
-                <button>See more characters</button>
+                <button onClick={handleButtonClick}>Learn more</button>
             </div>
         </>
     );
