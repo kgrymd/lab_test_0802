@@ -34,16 +34,16 @@ const NewsSlider = () => {
                         <img src={character.image} alt={character.name} />
                         <h2>{character.name}</h2>
                         <p>Gender: {character.gender}</p>
-                        <p>Birth Year: {character.born}</p>
+                        {/* <p>Birth Year: {character.born}</p> */}
                         <p>Species: {character.species}</p>
                         <p>Homeworld: {character.homeworld}</p>
                         <p>Height: {character.height}m</p>
                         <p>Mass: {character.mass}kg</p>
-                        <p>Hair Color: {character.hairColor}</p>
-                        <p>Eye Color: {character.eyeColor}</p>
-                        <p>Skin Color: {character.skinColor}</p>
-                        <p>Cybernetics: {character.cybernetics}</p>
-                        <p><a href={character.wiki} target="_blank" rel="noopener noreferrer">Learn more</a></p>
+                        {/* <p>Hair Color: {character.hairColor}</p> */}
+                        {/* <p>Eye Color: {character.eyeColor}</p> */}
+                        {/* <p>Skin Color: {character.skinColor}</p> */}
+                        {/* <p>Cybernetics: {character.cybernetics}</p> */}
+                        {/* <p><a href={character.wiki} target="_blank" rel="noopener noreferrer">Learn more</a></p> */}
                     </div>
                 ))}
             </Slider>
